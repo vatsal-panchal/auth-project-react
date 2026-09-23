@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("registeredUser")) || [],
   );
   const [toggle, setToggle] = useState(
-    JSON.parse(localStorage.getItem("theme")) ?? true
+    JSON.parse(localStorage.getItem("theme")) ?? true,
   );
 
   useEffect(() => {
